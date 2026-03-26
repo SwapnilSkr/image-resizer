@@ -1,13 +1,5 @@
 {
-  "functions": {
-    "app/server.ts": {
-      "runtime": "nodejs24.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/server"
-    }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "bun install",
+  "buildCommand": "bun run build"
 }
